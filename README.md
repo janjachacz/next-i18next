@@ -69,6 +69,9 @@ First, create a `next-i18next.config.js` file in the root of your project. The s
 
 This tells `next-i18next` what your `defaultLocale` and other locales are, so that it can preload translations on the server:
 
+For nested project in a monorepo, the `next-i18next.config.js` file path can be set with the environement variable `DEFAULT_I18NEXT_CONFIG_PATH`.
+
+
 #### `next-i18next.config.js`
 
 ```js

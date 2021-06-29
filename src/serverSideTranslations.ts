@@ -7,7 +7,7 @@ import createClient from './createClient'
 import { UserConfig, SSRConfig } from './types'
 import { FallbackLng } from 'i18next'
 
-const DEFAULT_CONFIG_PATH = './next-i18next.config.js'
+const DEFAULT_CONFIG_PATH = process.env.DEFAULT_I18NEXT_CONFIG_PATH || './next-i18next.config.js'
 
 const getFallbackLocales = (fallbackLng: false | FallbackLng) => {
   if (typeof fallbackLng === 'string') {
